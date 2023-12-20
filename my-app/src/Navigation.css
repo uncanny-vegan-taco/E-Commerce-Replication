@@ -1,16 +1,33 @@
+.Navwrap {
+  padding-top: 24px;
+}
 .logo {
   width: 186px;
 }
 .Navbar {
   background-color: #1547c3;
-  padding: 6px 120px;
+  padding: 0 133.5px;
 }
 .Main {
   width: 100%;
 }
 .Link {
   color: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  padding: 8px 16px;
+  transition: all 200ms ease-in-out;
+}
+.Link:hover {
+  background-color: #1942ae;
+  color: white;
 }
 .Option {
   color: blue;
+}
+.Special {
+  color: #fec80e;
+}
+.Special:hover {
+  color: #fec80e;
 }

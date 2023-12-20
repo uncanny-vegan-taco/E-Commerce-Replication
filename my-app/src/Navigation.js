@@ -13,14 +13,13 @@ export default Navigation;
 function Navigation() {
   return (
     <Navbar expand="lg" className="Navbar">
-      <Container fluid className="d-flex flex-column">
+      <Container fluid className="d-flex flex-column Navwrap">
         <Row className="Main">
-          <Col xs={2}>
+          <div className="d-flex justify-content-between align-tiems-center">
             <Navbar.Brand href="#">
               <img src={logo} className="logo" />
             </Navbar.Brand>
-          </Col>
-          <Col xs={4}>
+
             <Form>
               <Form.Control
                 type="search"
@@ -29,8 +28,7 @@ function Navigation() {
                 aria-label="Search"
               />
             </Form>
-          </Col>
-          <Col>
+
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
@@ -38,14 +36,8 @@ function Navigation() {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link href="#action1" className="Link">
-                  Home
-                </Nav.Link>
-                <Nav.Link href="#action2" className="Link">
-                  Link
-                </Nav.Link>
                 <NavDropdown
-                  title="Link"
+                  title="USA"
                   id="navbarScrollingDropdown"
                   className="Link"
                 >
@@ -60,17 +52,62 @@ function Navigation() {
                     Something else here
                   </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#" className="Link">
-                  Link
-                </Nav.Link>
+                <NavDropdown
+                  title="24/7 help"
+                  id="navbarScrollingDropdown"
+                  className="Link"
+                >
+                  <NavDropdown.Item href="#action3" className="Link Option">
+                    Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action4" className="Link Option">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action5" className="Link Option">
+                    Something else here
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="sign in"
+                  id="navbarScrollingDropdown"
+                  className="Link"
+                >
+                  <NavDropdown.Item href="#action3" className="Link Option">
+                    Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action4" className="Link Option">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action5" className="Link Option">
+                    Something else here
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown
+                  title="cart"
+                  id="navbarScrollingDropdown"
+                  className="Link"
+                >
+                  <NavDropdown.Item href="#action3" className="Link Option">
+                    Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action4" className="Link Option">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action5" className="Link Option">
+                    Something else here
+                  </NavDropdown.Item>
+                </NavDropdown>
               </Nav>
             </Navbar.Collapse>
-          </Col>
+          </div>
         </Row>
         <Row>
           <Col>
             <NavDropdown
-              title="Link"
+              title="shop"
               id="navbarScrollingDropdown"
               className="Link"
             >
@@ -88,7 +125,7 @@ function Navigation() {
           </Col>
           <Col>
             <NavDropdown
-              title="Link"
+              title="pharmacy"
               id="navbarScrollingDropdown"
               className="Link"
             >
@@ -105,8 +142,14 @@ function Navigation() {
             </NavDropdown>
           </Col>
           <Col>
+            <Nav.Link className="Link">brands</Nav.Link>
+          </Col>
+          <Col>
+            <Nav.Link className="Link">chewy picks</Nav.Link>
+          </Col>
+          <Col>
             <NavDropdown
-              title="Link"
+              title="give back"
               id="navbarScrollingDropdown"
               className="Link"
             >
@@ -123,94 +166,15 @@ function Navigation() {
             </NavDropdown>
           </Col>
           <Col>
-            <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
-              className="Link"
-            >
-              <NavDropdown.Item href="#action3" className="Link Option">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className="Link Option">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" className="Link Option">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link className="Link">holiday deals</Nav.Link>
           </Col>
           <Col>
-            <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
-              className="Link"
-            >
-              <NavDropdown.Item href="#action3" className="Link Option">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className="Link Option">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" className="Link Option">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link className="Link">e-gift cards</Nav.Link>
           </Col>
           <Col>
-            <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
-              className="Link"
-            >
-              <NavDropdown.Item href="#action3" className="Link Option">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className="Link Option">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" className="Link Option">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Col>
-          <Col>
-            <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
-              className="Link"
-            >
-              <NavDropdown.Item href="#action3" className="Link Option">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className="Link Option">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" className="Link Option">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Col>
-          <Col>
-            <NavDropdown
-              title="Link"
-              id="navbarScrollingDropdown"
-              className="Link"
-            >
-              <NavDropdown.Item href="#action3" className="Link Option">
-                Action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4" className="Link Option">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5" className="Link Option">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link className="Special">
+              free deliveries on first-time orders over $25
+            </Nav.Link>
           </Col>
         </Row>
       </Container>
