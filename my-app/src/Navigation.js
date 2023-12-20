@@ -15,7 +15,7 @@ function Navigation() {
     <Navbar expand="lg" className="Navbar">
       <Container fluid className="d-flex flex-column Navwrap">
         <Row className="Main ">
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex justify-content-evenly align-items-center">
             <div className="d-flex align-items-center justify-content-start">
               <Navbar.Brand href="#">
                 <img src={logo} className="logo" />
@@ -31,7 +31,7 @@ function Navigation() {
               </Form>
             </div>
 
-            <div className="d-flex justify-content-between mainLinks">
+            <div className="d-flex justify-content-evenly mainLinks">
               <div>
                 <NavDropdown
                   title="🇺🇸 USA"
