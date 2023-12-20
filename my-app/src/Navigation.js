@@ -7,8 +7,12 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import logo from "./logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComments } from "@fortawesome/free-solid-svg-icons";
 import "./Navigation.css";
 export default Navigation;
+
+const helpIcon = <FontAwesomeIcon icon={faComments} />;
 
 function Navigation() {
   return (
@@ -51,6 +55,7 @@ function Navigation() {
                 </NavDropdown>
               </div>
               <div>
+                {helpIcon}
                 <NavDropdown
                   title="24/7 help"
                   id="navbarScrollingDropdown"
