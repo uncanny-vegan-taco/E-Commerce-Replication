@@ -14,28 +14,25 @@ function Navigation() {
   return (
     <Navbar expand="lg" className="Navbar">
       <Container fluid className="d-flex flex-column Navwrap">
-        <Row className="Main">
+        <Row className="Main ">
           <div className="d-flex justify-content-between align-items-center">
-            <Navbar.Brand href="#">
-              <img src={logo} className="logo" />
-            </Navbar.Brand>
+            <div className="d-flex align-items-center justify-content-start">
+              <Navbar.Brand href="#">
+                <img src={logo} className="logo" />
+              </Navbar.Brand>
 
-            <Form>
-              <Form.Control
-                type="search"
-                placeholder="Search 🔍"
-                className="me-2 p-2"
-                aria-label="Search"
-              />
-            </Form>
+              <Form>
+                <Form.Control
+                  type="search"
+                  placeholder="Search 🔍"
+                  className="me-2 p-2"
+                  aria-label="Search"
+                />
+              </Form>
+            </div>
 
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px" }}
-                navbarScroll
-              >
+            <div className="d-flex justify-content-between mainLinks">
+              <div>
                 <NavDropdown
                   title="🇺🇸 USA"
                   id="navbarScrollingDropdown"
@@ -52,6 +49,8 @@ function Navigation() {
                     Something else here
                   </NavDropdown.Item>
                 </NavDropdown>
+              </div>
+              <div>
                 <NavDropdown
                   title="24/7 help"
                   id="navbarScrollingDropdown"
@@ -68,6 +67,8 @@ function Navigation() {
                     Something else here
                   </NavDropdown.Item>
                 </NavDropdown>
+              </div>
+              <div>
                 <NavDropdown
                   title="sign in"
                   id="navbarScrollingDropdown"
@@ -84,6 +85,8 @@ function Navigation() {
                     Something else here
                   </NavDropdown.Item>
                 </NavDropdown>
+              </div>
+              <div>
                 <NavDropdown
                   title="cart"
                   id="navbarScrollingDropdown"
@@ -100,8 +103,8 @@ function Navigation() {
                     Something else here
                   </NavDropdown.Item>
                 </NavDropdown>
-              </Nav>
-            </Navbar.Collapse>
+              </div>
+            </div>
           </div>
         </Row>
         <Row className="Second">

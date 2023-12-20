@@ -17,6 +17,9 @@ Form {
   justify-content: space-between;
   margin-bottom: 15px;
 }
+.mainLinks {
+  width: 100%;
+}
 .Link,
 #navbarScrollingDropdown {
   text-align: center;
