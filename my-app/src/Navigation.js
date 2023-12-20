@@ -11,12 +11,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Navigation.css";
 export default Navigation;
 
 const helpIcon = <FontAwesomeIcon icon={faComments} />;
 const signInIcon = <FontAwesomeIcon icon={faUser} />;
 const cartIcon = <FontAwesomeIcon icon={faCartShopping} />;
+const searchIcon = <FontAwesomeIcon icon={faMagnifyingGlass} />;
 
 function Navigation() {
   return (
@@ -29,13 +31,14 @@ function Navigation() {
                 <img src={logo} className="logo" />
               </Navbar.Brand>
 
-              <Form>
+              <Form className="d-flex">
                 <Form.Control
                   type="search"
-                  placeholder="Search 🔍"
-                  className="me-2 p-2"
+                  placeholder="Search"
+                  className="p-2"
                   aria-label="Search"
                 />
+                {searchIcon}
               </Form>
             </div>
 
@@ -78,11 +81,7 @@ function Navigation() {
               <div>
                 <div className="d-flex align-items-center Link">
                   {signInIcon}
-                  <NavDropdown
-                    title="sign in"
-                    id="navbarScrollingDropdown"
-                    className="Link"
-                  >
+                  <NavDropdown title="sign in" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="#action3" className="Link Option">
                       Action
                     </NavDropdown.Item>
@@ -99,11 +98,7 @@ function Navigation() {
               <div>
                 <div className="d-flex align-items-center Link">
                   {cartIcon}
-                  <NavDropdown
-                    title="cart"
-                    id="navbarScrollingDropdown"
-                    className="Link"
-                  >
+                  <NavDropdown title="cart" id="navbarScrollingDropdown">
                     <NavDropdown.Item href="#action3" className="Link Option">
                       Action
                     </NavDropdown.Item>
