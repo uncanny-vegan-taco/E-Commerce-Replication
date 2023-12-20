@@ -9,10 +9,14 @@ import Col from "react-bootstrap/Col";
 import logo from "./logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComments } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "./Navigation.css";
 export default Navigation;
 
 const helpIcon = <FontAwesomeIcon icon={faComments} />;
+const signInIcon = <FontAwesomeIcon icon={faUser} />;
+const cartIcon = <FontAwesomeIcon icon={faCartShopping} />;
 
 function Navigation() {
   return (
@@ -55,59 +59,63 @@ function Navigation() {
                 </NavDropdown>
               </div>
               <div>
-                {helpIcon}
-                <NavDropdown
-                  title="24/7 help"
-                  id="navbarScrollingDropdown"
-                  className="Link"
-                >
-                  <NavDropdown.Item href="#action3" className="Link Option">
-                    Action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4" className="Link Option">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5" className="Link Option">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <div className="d-flex align-items-center Link">
+                  {helpIcon}
+                  <NavDropdown title="24/7 help" id="navbarScrollingDropdown">
+                    <NavDropdown.Item href="#action3" className="Link Option">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4" className="Link Option">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5" className="Link Option">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </div>
               </div>
               <div>
-                <NavDropdown
-                  title="sign in"
-                  id="navbarScrollingDropdown"
-                  className="Link"
-                >
-                  <NavDropdown.Item href="#action3" className="Link Option">
-                    Action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4" className="Link Option">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5" className="Link Option">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <div className="d-flex align-items-center Link">
+                  {signInIcon}
+                  <NavDropdown
+                    title="sign in"
+                    id="navbarScrollingDropdown"
+                    className="Link"
+                  >
+                    <NavDropdown.Item href="#action3" className="Link Option">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4" className="Link Option">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5" className="Link Option">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </div>
               </div>
               <div>
-                <NavDropdown
-                  title="cart"
-                  id="navbarScrollingDropdown"
-                  className="Link"
-                >
-                  <NavDropdown.Item href="#action3" className="Link Option">
-                    Action
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action4" className="Link Option">
-                    Another action
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#action5" className="Link Option">
-                    Something else here
-                  </NavDropdown.Item>
-                </NavDropdown>
+                <div className="d-flex align-items-center Link">
+                  {cartIcon}
+                  <NavDropdown
+                    title="cart"
+                    id="navbarScrollingDropdown"
+                    className="Link"
+                  >
+                    <NavDropdown.Item href="#action3" className="Link Option">
+                      Action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action4" className="Link Option">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5" className="Link Option">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </div>
               </div>
             </div>
           </div>
