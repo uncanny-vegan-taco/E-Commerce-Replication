@@ -13,8 +13,19 @@ img.Slide {
 .footer-block {
   display: inline-block;
   border: 1px solid #e8e8e8;
-  padding: 15px 196.95px 15px 30px;
+  padding: 25px 164.1px 25px 30px;
+  line-height: 0.5;
+  font-size: 18px;
+  color: #555555;
+}
+.footer-block p {
+  font-weight: 600;
 }
 a {
   text-decoration: none;
+}
+.icon {
+  font-size: 30px;
+  margin-right: 10px;
+  color: #cccccc;
 }

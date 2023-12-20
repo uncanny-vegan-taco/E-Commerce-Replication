@@ -6,7 +6,13 @@ import Carouselimage2 from "./Carouselimage2.png";
 import Carouselimage3 from "./Carouselimage3.png";
 import "./Slideshow.css";
 import Container from "react-bootstrap/esm/Container";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
+import { faBox } from "@fortawesome/free-solid-svg-icons";
 export default Slideshow;
+
+const shipIcon = <FontAwesomeIcon icon={faArrowsRotate} />;
+const boxIcon = <FontAwesomeIcon icon={faBox} />;
 
 function Slideshow() {
   const [index, setIndex] = useState(0);
@@ -34,18 +40,30 @@ function Slideshow() {
           </a>
         </Carousel.Item>
       </Carousel>
-      <div className="Footer">
+      <div className="Footer d-flex">
         <div className="footer-block">
-          <p>Hi</p>
-          <a href="#">Sign In</a>
+          <div>
+            <p>Hi</p>
+            <a href="#">Sign In</a>
+          </div>
         </div>
         <div className="footer-block">
-          <p>Save 35% Today</p>
-          <a href="#">Set up Autoship</a>
+          <div className="d-flex align-items-center">
+            <div className="icon">{shipIcon}</div>
+            <div>
+              <p>Save 35% Today</p>
+              <a href="#">Set up Autoship</a>
+            </div>
+          </div>
         </div>
         <div className="footer-block">
-          <p>Recent Order</p>
-          <a href="#">Track Package</a>
+          <div className="d-flex align-items-center">
+            <div className="icon">{boxIcon}</div>
+            <div>
+              <p>Recent Order</p>
+              <a href="#">Track Package</a>
+            </div>
+          </div>
         </div>
         <div className="footer-block">
           <p>Chewy Pharmacy</p>
