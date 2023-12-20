@@ -1,3 +1,6 @@
+Form {
+  width: 440px;
+}
 .Navwrap {
   padding-top: 24px;
 }
@@ -6,15 +9,18 @@
 }
 .Navbar {
   background-color: #1547c3;
-  padding: 0 133.5px;
+  padding: 0 50px;
 }
 .Main {
   width: 100%;
+  height: 70px;
+  justify-content: space-between;
 }
-.Link {
+.Link,
+#navbarScrollingDropdown {
   color: white;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 16px;
   padding: 8px 16px;
   transition: all 200ms ease-in-out;
 }
@@ -27,7 +33,13 @@
 }
 .Special {
   color: #fec80e;
+
+  font-weight: 500;
 }
 .Special:hover {
   color: #fec80e;
+}
+.Second {
+  justify-content: space-between;
+  width: 100%;
 }
