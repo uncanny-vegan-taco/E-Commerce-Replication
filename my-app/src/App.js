@@ -8,8 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navigation />
-        <Slideshow />
       </header>
+      <Slideshow />
     </div>
   );
 }
