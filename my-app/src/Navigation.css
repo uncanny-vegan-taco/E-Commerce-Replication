@@ -38,7 +38,6 @@ Form {
 }
 .Special {
   color: #fec80e;
-
   font-weight: 500;
 }
 .Special:hover {
@@ -47,4 +46,8 @@ Form {
 .Second {
   justify-content: space-between;
   width: 100%;
+}
+.shop {
+  font-weight: 800;
+  font-size: 50px;
 }

@@ -121,7 +121,7 @@ function Navigation() {
               <NavDropdown
                 title="shop"
                 id="navbarScrollingDropdown"
-                className="Link"
+                className="Link shop"
               >
                 <NavDropdown.Item href="#action3" className="Link Option">
                   Action
